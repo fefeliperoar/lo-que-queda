@@ -15,7 +15,7 @@ Usa el sistema de diseño de *Desnaturalización IA* (Computación Avanzada 2026
 
 ## Publicación en GitHub Pages
 
-En el repositorio: Settings → Pages → Deploy from a branch → `main` → `/ (root)`. El sitio queda en `https://USUARIO.github.io/NOMBRE-DEL-REPO/`. Pages usa HTTPS, así que la cámara y el USB funcionan sin `localhost`.
+En el repositorio: Settings → Pages → Deploy from a branch → `main` → `/ (root)`. El sitio queda en https://fefeliperoar.github.io/lo-que-queda/. Pages usa HTTPS, así que la cámara y el USB funcionan sin `localhost`.
 
 Los datos (desgaste, mapas, sesiones) se guardan en el `localStorage` del navegador: cada dispositivo tiene los suyos y no pasan de `localhost` a `github.io`. Exporten con frecuencia.
 

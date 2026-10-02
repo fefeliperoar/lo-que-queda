@@ -716,7 +716,7 @@ function amplitudeAt(onset){
 }
 let advanceAcc = 0;
 async function connectSerial(){
-  if(!('serial' in navigator)){ log('Este navegador no permite conectar el Arduino. Usa Chrome o Edge desde localhost.', 'aviso'); return; }
+  if(!('serial' in navigator)){ log('Este navegador no permite conectar el Arduino. Usa Chrome o Edge de escritorio, por https o desde localhost.', 'aviso'); return; }
   try{
     const port = await navigator.serial.requestPort(); await port.open({baudRate: 115200});
     setBadge($('#badge-serial'), 'Conectado', 'on'); $('#t-conexion').textContent = 'USB'; log('Arduino conectado.');
@@ -1130,7 +1130,7 @@ if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
 /* ---------- arranque ---------- */
 buildParams(); buildDemoCorpus();
 $('#t-datos').textContent = visitasLabel();
-log('Sistema listo. Corpus de demostración con 12 imágenes.');
+log('Sistema listo. Buscando el corpus del repositorio…');
 loadRepoCorpus();
 </script>
 </body>
