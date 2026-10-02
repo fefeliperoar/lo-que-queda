@@ -1,18 +1,18 @@
 # Créditos de las imágenes
 
-Fotografías de [Pexels](https://www.pexels.com), bajo la [licencia de Pexels](https://www.pexels.com/license/) (uso libre, atribución no obligatoria). Recortadas a 1080 × 1920 (9:16) desde el original.
+Fotografías de [Pexels](https://www.pexels.com), bajo la [licencia de Pexels](https://www.pexels.com/license/) (uso libre, atribución no obligatoria). Recortadas a 1080 × 1920 (9:16) desde el original. Corpus pensado como un feed de red social: personas, acciones, comida, calle y eventos.
 
-| Archivo | Autor | Foto en Pexels |
-|---|---|---|
-| 01.jpg | Kohan Khaki | https://www.pexels.com/photo/32001134/ |
-| 02.jpg | Ricardo CL | https://www.pexels.com/photo/22678038/ |
-| 03.jpg | Eberhard Gross | https://www.pexels.com/photo/31612212/ |
-| 04.jpg | seyhmuskino | https://www.pexels.com/photo/28706140/ |
-| 05.jpg | Raouf Bedrani | https://www.pexels.com/photo/11377054/ |
-| 06.jpg | Antoine Pittet | https://www.pexels.com/photo/33775045/ |
-| 07.jpg | Miami302 | https://www.pexels.com/photo/26732100/ |
-| 08.jpg | Novillolapeyra | https://www.pexels.com/photo/27585398/ |
-| 09.jpg | BlackPhant | https://www.pexels.com/photo/37804611/ |
-| 10.jpg | Nora Melbourne | https://www.pexels.com/photo/15047414/ |
-| 11.jpg | Jean-Paul Wettstein | https://www.pexels.com/photo/37413419/ |
-| 12.jpg | Frans van Heerden | https://www.pexels.com/photo/4561610/ |
+| Archivo | Tema | Autor | Foto en Pexels |
+|---|---|---|---|
+| 01.jpg | Amigos en un café | silverkblack | https://www.pexels.com/photo/39910777/ |
+| 02.jpg | Moda callejera | brianjiz | https://www.pexels.com/photo/26760669/ |
+| 03.jpg | Desayuno | Ioana MTC | https://www.pexels.com/photo/12815080/ |
+| 04.jpg | Gimnasio | Ron Lach | https://www.pexels.com/photo/9644820/ |
+| 05.jpg | Concierto | Wendy Wei | https://www.pexels.com/photo/29848655/ |
+| 06.jpg | Viajeros | Ketut Subiyanto | https://www.pexels.com/photo/4881122/ |
+| 07.jpg | Skate en la calle | El Gringo Photo | https://www.pexels.com/photo/16971399/ |
+| 08.jpg | Fiesta | Zach TheShiota | https://www.pexels.com/photo/4306963/ |
+| 09.jpg | Selfie entre amigas | darina-belonogova | https://www.pexels.com/photo/9179068/ |
+| 10.jpg | Pose urbana | hatice-baran | https://www.pexels.com/photo/16586906/ |
+| 11.jpg | Skate en el parque | Cottonbro | https://www.pexels.com/photo/5037667/ |
+| 12.jpg | Mesa de picnic | Cottonbro | https://www.pexels.com/photo/4877840/ |
