@@ -1,6 +1,6 @@
 # Lo que queda — prototipo de desgaste por mirada (v2)
 
-Un feed vertical en que **las zonas que miras se gastan**: se pixelan, pierden el color y se blanquean hasta quedar completamente blancas. Si una imagen no provoca respuesta en la piel, las zonas que miraste en ella se gastan más. Cuando el cuerpo deja de responder durante varias imágenes seguidas, el feed se cierra y aparece un informe con los mapas de calor de la mirada.
+Un feed vertical en que **las zonas que miras se gastan**: se pixelan, sus colores se mezclan hasta volverse manchones y al final se blanquean hasta quedar completamente blancas. Si una imagen no provoca respuesta en la piel, las zonas que miraste en ella se gastan más. Cuando el cuerpo deja de responder durante varias imágenes seguidas, el feed se cierra y aparece un informe con los mapas de calor de la mirada.
 
 Usa el sistema de diseño de *Desnaturalización IA* (Computación Avanzada 2026): monocromo, líneas de 1 px, sin esquinas redondeadas, grano fino, barras fijas arriba y abajo, dock numerado a la derecha, lectura en vivo abajo a la izquierda y título en verde lima.
 
@@ -44,9 +44,9 @@ La imagen se divide en una grilla de 27 × 48 celdas. Cada lectura de la mirada 
 
 | Desgaste | Efecto |
 |---|---|
-| 0 a 0,55 | Pixelado creciente (bloques de 1 a 40 px) |
-| 0,12 a 0,6 | Pérdida de color hasta gris |
-| 0,55 a 1 | Blanqueo progresivo; en 1 la celda queda blanca |
+| 0 a 0,6 | Pixelado creciente (bloques de 1 a 60 px; cada bloque promedia sus colores) |
+| 0,35 a 0,7 | Los bloques se funden en manchones de color: imagen reducida a pocos tonos, desenfocada y más saturada |
+| 0,9 a 1 | Blanqueo; en 1 la celda queda blanca |
 
 Cuando todas las celdas llegan a 1, la imagen queda completamente blanca. El desgaste se guarda por imagen y se **comparte entre todos los visitantes**: cada persona recibe las imágenes como las dejó la anterior.
 
@@ -89,4 +89,4 @@ Igual que antes: el potenciómetro en A0 simula la piel y el encoder avanza el f
 
 - WebGazer estima la mirada con una cámara web común. Es suficiente para zonas amplias de la imagen, no para detalles finos. Por eso el desgaste y los mapas trabajan con manchas de unos 50 px de radio (ajustable en 04 · Parámetros).
 - La precisión empeora si la persona mueve la cabeza o cambia la luz. Mantengan una distancia y una iluminación constantes, y recalibren por cada visitante.
-- El desgaste es procesamiento de imagen (pixelado, desaturación y blanqueo), no IA generativa. Es una decisión de prototipo que conviene explicitar en la tesis.
+- El desgaste es procesamiento de imagen (pixelado, mezcla de color en manchones y blanqueo), no IA generativa. Es una decisión de prototipo que conviene explicitar en la tesis.
