@@ -712,8 +712,10 @@ const SIG = {buf: [], serialVal: null, serialAt: 0, simBase: 0.5, spikes: [], so
 function spikeSum(t){ let v = 0; for(const s of SIG.spikes){ const d = t - s.t0; if(d > 0) v += s.a * (1 - Math.exp(-d / 0.35)) * Math.exp(-d / 2.8); } return v; }
 function tickSignal(){
   const t = now(); let v;
-  if(SIG.serialVal !== null && t - SIG.serialAt < 1){ v = SIG.serialVal; SIG.source = 'ESP32'; }
-  else { v = SIG.simBase + (Math.random() - .5) * 0.004; SIG.source = SIG.serialVal === null ? 'Simulación' : 'ESP32 sin datos'; }
+  const live = SIG.serialVal !== null && t - SIG.serialAt < 1, sld = $('#sld-nivel');
+  if(live){ v = SIG.serialVal; SIG.source = 'ESP32'; sld.value = v; }
+  else { v = SIG.simBase + (Math.random() - .5) * 0.004; SIG.source = SIG.serialVal === null ? 'Simulación' : 'ESP32 sin datos'; if(sld.disabled) sld.value = SIG.simBase; }
+  sld.disabled = live;
   if(CFG.invert) v = 1 - v;
   v += spikeSum(t);
   SIG.buf.push({t, v}); if(SIG.buf.length > 32000) SIG.buf.splice(0, SIG.buf.length - 30000);
